@@ -10,5 +10,15 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
+        <!--Añadimos un action para el ejercicio 1: dispatcher. -->
+        <action name="dispatcher" class="com.javatutoriales.results.actions.DispatcherResultAction">
+            <!-- Definimos los results correspondientes: -->
+            <result name="success" type="dispatcher">
+                <param name="location">/dispatcher/exito.jsp</param>
+            </result>
+            <result name="error" type="dispatcher">
+                <param name="location">/dispatcher/error.jsp</param>
+            </result>
+        </action>
     </package>
 </struts>
