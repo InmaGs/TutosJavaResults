@@ -15,7 +15,12 @@
     <body>
         <h1>Formulario para el uso de Dispatcher</h1>
         <p>
-            
+            <s:form action="dispatcher">
+                <s:textfield name="nombre" label="Nombre"/>
+                <s:select name="lenguaje" label="Lenguaje de programación"
+                          list="{'Java','PHP','.Net'}"/>
+                <s:submit value="Enviar"/>
+            </s:form>
         </p>
         <p>
             <a href="../index.jsp">Inicio</a>
