@@ -13,5 +13,11 @@
     </head>
     <body>
         <h1>Ejercicios de tipos de Results</h1>
+        <p>
+            Apartados:
+        <ul>
+            <li><a href="dispatcher/index.jsp">Dispatcher</a></li>
+        </ul>
+        </p>
     </body>
 </html>

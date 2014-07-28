@@ -1,20 +1,30 @@
-package org.apache.jsp;
+package org.apache.jsp.dispatcher;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class exito_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_s_property_value_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -44,19 +54,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Results</title>\n");
+      out.write("        <title>Dispatcher</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Ejercicios de tipos de Results</h1>\n");
+      out.write("        <h1>Caso de éxito</h1>\n");
       out.write("        <p>\n");
-      out.write("            Apartados:\n");
-      out.write("        <ul>\n");
-      out.write("            <li><a href=\"dispatcher/index.jsp\">Dispatcher</a></li>\n");
-      out.write("        </ul>\n");
+      out.write("            Bienvenido ");
+      if (_jspx_meth_s_property_0(_jspx_page_context))
+        return;
+      out.write(" al munod de la programación Java.\n");
       out.write("        </p>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
@@ -71,5 +82,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_property_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_0 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_0.setParent(null);
+    _jspx_th_s_property_0.setValue("nombre");
+    int _jspx_eval_s_property_0 = _jspx_th_s_property_0.doStartTag();
+    if (_jspx_th_s_property_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_0);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_0);
+    return false;
   }
 }
