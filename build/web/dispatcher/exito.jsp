@@ -15,7 +15,11 @@
     <body>
         <h1>Caso de éxito</h1>
         <p>
-            Bienvenido <s:property value="nombre"/> al munod de la programación Java.
+            Bienvenido <s:property value="nombre"/> al mundo de la programación Java.
+        </p>
+        <p>
+            <a href="../index.jsp">Inicio</a>
+            <a href="index.jsp">Inicio Dispatcher</a>
         </p>
     </body>
 </html>
