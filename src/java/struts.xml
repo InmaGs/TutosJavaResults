@@ -19,6 +19,14 @@
             <result name="error" type="dispatcher">
                 <param name="location">/dispatcher/error.jsp</param>
             </result>
+            <!-- Como location es el parámetro por defecto del tipo de error dispatcher, se puede
+                simplificar: <result name="success" type="dispatcher">/dispatcher/exito.jsp</result>
+                y como dispatcher es el tipo por defecto del tipo de result, entonces finalmente 
+                quedaría: <result name="success">/dispatcher/exito.jsp</result>-->
+            <!-- También se puede usar un parámetro para obtener la dirección a la que reenviar
+                la petición del usuario: <result name="error">${ubicacion}</result>. Para obtener
+                esta dirección habría que añadir un getter a la clase:
+                public String getUbicacion(){return "/pagina.jsp";}-->
         </action>
     </package>
 </struts>
