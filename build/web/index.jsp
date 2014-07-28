@@ -17,6 +17,7 @@
             Apartados:
         <ul>
             <li><a href="dispatcher/index.jsp">Dispatcher</a></li>
+            <li><a href="redirect/index.jsp">Redirect</a></li>
         </ul>
         </p>
     </body>
