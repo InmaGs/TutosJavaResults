@@ -18,6 +18,7 @@
             de struts.xml.<br/>
             Página movida de su ruta: <s:a action="httpstatus301">301 - Moved Permanently</s:a><br/>
             Error de cliente: <s:a action="httpstatus400">400 - Bad Request</s:a><br/>
+            Error de servidor: <s:a action="httpstatus501">501 - Not Implemented</s:a>
         </p>
         <p>
             <a href="../index.jsp">Inicio</a>

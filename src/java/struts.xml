@@ -99,5 +99,15 @@
                 </param>
             </result>
         </action>
+        <!-- Action para error 501, de servidor. No requiere clase -->
+        <action name="httpstatus501">
+            <result type="httpheader">
+                <param name="error">501</param>
+                <param name="errorMessage">
+                    La funcionalidad que está tratando de usar aún no está implementada. Inténtelo
+                    más tarde.
+                </param>
+            </result>
+        </action>
     </package>
 </struts>
