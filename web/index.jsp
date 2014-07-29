@@ -21,6 +21,7 @@
             <li><a href="redirectAction/index.jsp">Redirect Action</a></li>
             <li><a href="chain/index.jsp">Chain</a></li>
             <li><a href="stream/index.jsp">Stream</a></li>
+            <li><a href="plaintext/index.jsp">Plaintext</a></li>
         </ul>
         </p>
     </body>
