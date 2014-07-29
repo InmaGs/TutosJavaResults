@@ -78,5 +78,17 @@
                 <param name="charSET">UTF-8</param>
             </result>                
         </action>
+        <!-- Creación del action de headers. En este caso se crea para el error 301,
+            que ocurre cuando una página ha sido movida permanentemente de su
+            ubicación original (no es exactamente un error, ya que la petición se hace
+            correctamente). Con el parámetro location, se asigna la nueva localización
+            y redirecciona hacia la dirección indicada-->
+        <action name="httpstatus301">
+            <result type="httpheader">
+                <param name="status">301</param>
+                <param name="headers.Location">http://www.javatutoriales.com/</param>
+            </result>
+        </action>
+        
     </package>
 </struts>
