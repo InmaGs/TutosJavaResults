@@ -7,6 +7,9 @@
 package com.javatutoriales.results.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionInvocation;
+import com.opensymphony.xwork2.interceptor.PreResultListener;
 
 /**
  *
@@ -37,6 +40,22 @@ public class PreResultListenerAction extends ActionSupport {
     //Método execute, que devolverá error si la opción del selct no es java.
     @Override
     public String execute() throws Exception{
+        //Añadimos el 'listener'
+        ActionInvocation actionInvocation = ActionContext.getContext().getActionInvocation();
+        
+        actionInvocation.addPreResultListener(new PreResultListener()
+        {
+            //Agregamos la lógica que se ejecuta antes del procesamiento del result.
+            public void beforeResult(ActionInvocation ai, String resultCode)
+            {
+                //Con esto, siempre seremos redirigidos a la página de éxito sin 
+                //importar el leguaje escogido en el select.
+                ai.setResultCode(SUCCESS);
+                //nombre = " colega " + nombre;
+            }
+        });
+        
+        //Comportamiento normal de la página:
         if(!"Java".equals(lenguaje))
         {
             return ERROR;
