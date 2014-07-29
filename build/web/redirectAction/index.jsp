@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : 28-jul-2014, 14:38:13
+    Created on : 29-jul-2014, 9:30:42
     Author     : inmaculada.garcia
 --%>
 
@@ -10,14 +10,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Redirect</title>
+        <title>RedirectAction</title>
     </head>
     <body>
-        <h1>Ejercicio de redireccionamiento</h1>
+        <h1>Ejemplo de redireccionamiento de un action.</h1>
         <p>
-            Se redirecciona al primer ejercicio del tutorial, dispatcher:<br/>
-            <s:a action="redirect">Redireccionar</s:a>
-            <s:a action="redirect-externo">Redireccionar externo</s:a>
+            <s:a action="redirect-action">Redireccionar</s:a>
         </p>
         <p>
             <a href="../index.jsp">Inicio</a>

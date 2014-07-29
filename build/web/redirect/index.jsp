@@ -17,6 +17,7 @@
         <p>
             Se redirecciona al primer ejercicio del tutorial, dispatcher:<br/>
             <s:a action="redirect">Redireccionar</s:a>
+            <s:a action="redirect-externo">Redireccionar externo</s:a>
         </p>
         <p>
             <a href="../index.jsp">Inicio</a>

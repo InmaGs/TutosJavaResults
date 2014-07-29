@@ -18,6 +18,7 @@
         <ul>
             <li><a href="dispatcher/index.jsp">Dispatcher</a></li>
             <li><a href="redirect/index.jsp">Redirect</a></li>
+            <li><a href="redirectAction/index.jsp">Redirect Action</a></li>
         </ul>
         </p>
     </body>
