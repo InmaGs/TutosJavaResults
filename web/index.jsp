@@ -22,6 +22,7 @@
             <li><a href="chain/index.jsp">Chain</a></li>
             <li><a href="stream/index.jsp">Stream</a></li>
             <li><a href="plaintext/index.jsp">Plaintext</a></li>
+            <li><a href="headers/index.jsp">Header</a></li>
         </ul>
         </p>
     </body>
