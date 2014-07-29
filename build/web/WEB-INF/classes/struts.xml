@@ -37,5 +37,9 @@
         <action name="redirect-externo" class="com.javatutoriales.results.actions.RedirectExternoResultAction">
             <result type="redirect">http://www.javatutoriales.com/2011/10/struts-2-parte-3-trabajo-con.htm</result>
         </action>
+        <!-- Acción de redirección a otro action -->
+        <action name="redirect-action" class="com.javatutoriales.results.actions.RedirectAccionAction">
+            <result type="redirectAction">dispatcher</result>
+        </action>
     </package>
 </struts>

@@ -5,8 +5,8 @@
         <group>
             <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/src/java/struts.xml</file>
             <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/web/index.jsp</file>
-            <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/src/java/com/javatutoriales/results/actions/RedirectResultAction.java</file>
-            <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/web/redirect/index.jsp</file>
+            <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/web/redirectAction/index.jsp</file>
+            <file>file:/C:/Users/inmaculada.garcia/Documents/NetBeansProjects/TutoStruts/EjemploStruts2Results/src/java/com/javatutoriales/results/actions/RedirectAccionAction.java</file>
         </group>
     </open-files>
 </project-private>
