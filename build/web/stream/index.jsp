@@ -15,6 +15,10 @@
     <body>
         <h1>Uso del Result Stream</h1>
         <p>
+            Imágen: <br/>
+            <img src="stream.action" alt="imagen"/>
+        </p>
+        <p>
             <a href="../index.jsp">Inicio</a>
         </p>
     </body>
