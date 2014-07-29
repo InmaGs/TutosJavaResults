@@ -71,5 +71,12 @@
                 <param name="contentDisposition">attachment;filename=${nombreImagen}</param>
             </result>
         </action>
+        <!-- Declaración del action del apartado plaintext -->
+        <action name="plaintext" class="com.javatutoriales.results.actions.PlainTextResultAction">
+            <result type="plainText">
+                <param name="location">/plaintext/pagina.html</param>
+                <param name="charSET">UTF-8</param>
+            </result>                
+        </action>
     </package>
 </struts>
