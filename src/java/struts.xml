@@ -49,5 +49,16 @@
                 <param name="lenguaje">${lenguajeProgramación}</param>
             </result>
         </action>
+        <!-- Acciónes para el ejercicio de chain. En este caso son acciones "ficticias", pero 
+            normalmente son cadenas de acciones reales-->
+        <action name="chain">
+            <result type="chain">chain2</result>
+        </action>
+        <action name="chain2">
+            <result type="chain">chain3</result>
+        </action>
+        <action name="chain3">
+            <result type="chain">redirect-externo</result>
+        </action>
     </package>
 </struts>
