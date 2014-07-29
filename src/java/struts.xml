@@ -109,5 +109,10 @@
                 </param>
             </result>
         </action>
+        <!-- Acción de PreResult, con dos resultados, que redigirán cada uno a una página diferente -->
+        <action name="presult" class="com.javatutoriales.results.actions.PreResultListenerAction">
+            <result>/preresult/exito.jsp</result>
+            <result name="error">/preresult/error.jsp</result>
+        </action>
     </package>
 </struts>
