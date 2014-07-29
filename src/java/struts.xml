@@ -33,5 +33,9 @@
             <!-- Agregamos el resultado, cuyo parámetro por defecto es location y se puede dejar: -->
             <result type="redirect">/dispatcher/index.jsp</result>
         </action>
+        <!-- Añadimos action para redirect externo -->
+        <action name="redirect-externo" class="com.javatutoriales.results.actions.RedirectExternoResultAction">
+            <result type="redirect">http://www.javatutoriales.com/2011/10/struts-2-parte-3-trabajo-con.htm</result>
+        </action>
     </package>
 </struts>
