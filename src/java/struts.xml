@@ -60,5 +60,16 @@
         <action name="chain3">
             <result type="chain">redirect-externo</result>
         </action>
+        <!-- Se añade el action del apartado de stream para la obtencion de imágenes.
+            En este caso hay que especificar los parámetros, ya que no tiene nada por 
+            defecto -->
+        <action name="stream" class="com.javatutoriales.results.actions.StreamResultAction">
+            <result type="stream">
+                <param name="contentType">image/png</param>
+                <param name="contentLength">${bytesArchivo}</param>
+                <param name="inputName">streamImagen</param>
+                <param name="contentDisposition">attachment;filename=${nombreImagen}</param>
+            </result>
+        </action>
     </package>
 </struts>
