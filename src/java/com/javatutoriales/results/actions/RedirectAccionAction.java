@@ -18,5 +18,11 @@ public class RedirectAccionAction extends ActionSupport {
     public String execute() throws Exception{
         return SUCCESS;
     }
+   
+    //Añadimos un getter para la obtención del parámetro que se define en el 
+    //archivo struts.xml
+    public String getLenguajeProgramación(){
+        return "Java";
+    }
     
 }

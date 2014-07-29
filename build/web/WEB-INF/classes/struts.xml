@@ -39,7 +39,15 @@
         </action>
         <!-- Acción de redirección a otro action -->
         <action name="redirect-action" class="com.javatutoriales.results.actions.RedirectAccionAction">
-            <result type="redirectAction">dispatcher</result>
+            <result type="redirectAction">
+            <!-- Como la página a la que se redirecciona a través del action, ha de recibir un
+                nombre y un lenguaje de programación, entonces añadimos parámetros al resultado.-->
+                <param name="actionName">dispatcher</param>
+                <param name="nombre">Nombre</param> 
+                <!-- El parámetro anterior se define de forma estática, pero podría ser dinámica, 
+                    como en el caso el siguiente, para lo que hay que añadir un getter en la clase-->
+                <param name="lenguaje">${lenguajeProgramación}</param>
+            </result>
         </action>
     </package>
 </struts>
