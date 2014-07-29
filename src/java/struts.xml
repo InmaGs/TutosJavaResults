@@ -28,5 +28,10 @@
                 esta dirección habría que añadir un getter a la clase:
                 public String getUbicacion(){return "/pagina.jsp";}-->
         </action>
+        <!-- Añadimos un action para el ejercicio 2: redirect. -->
+        <action name="redirect" class="com.javatutoriales.results.actions.RedirectResultAction">
+            <!-- Agregamos el resultado, cuyo parámetro por defecto es location y se puede dejar: -->
+            <result type="redirect">/dispatcher/index.jsp</result>
+        </action>
     </package>
 </struts>
