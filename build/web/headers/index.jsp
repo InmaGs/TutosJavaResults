@@ -16,7 +16,8 @@
         <h1>Aplicación del Result Header</h1>
         <p>En este caso no es necesario crear una clase de action, tan sólo en el código 
             de struts.xml.<br/>
-            Enlace: <s:a action="httpstatus301">301 - Moved Permanently</s:a>
+            Página movida de su ruta: <s:a action="httpstatus301">301 - Moved Permanently</s:a><br/>
+            Error de cliente: <s:a action="httpstatus400">400 - Bad Request</s:a><br/>
         </p>
         <p>
             <a href="../index.jsp">Inicio</a>

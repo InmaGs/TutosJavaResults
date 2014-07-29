@@ -89,6 +89,15 @@
                 <param name="headers.Location">http://www.javatutoriales.com/</param>
             </result>
         </action>
-        
+        <!-- Action para error 400, que es de cliente. No requiere clase -->
+        <action name="httpstatus400">
+            <result type="httpheader">
+                <param name="error">400</param>
+                <param name="errorMessage">
+                    Los datos proporcionados no pueden ser entendidos. Compruebe la 
+                    sintaxis o use otro navegador.
+                </param>
+            </result>
+        </action>
     </package>
 </struts>
