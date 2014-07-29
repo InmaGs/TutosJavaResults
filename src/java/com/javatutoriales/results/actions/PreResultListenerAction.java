@@ -51,7 +51,10 @@ public class PreResultListenerAction extends ActionSupport {
                 //Con esto, siempre seremos redirigidos a la página de éxito sin 
                 //importar el leguaje escogido en el select.
                 ai.setResultCode(SUCCESS);
-                //nombre = " colega " + nombre;
+                
+                //Aquí también podemos cambiar lo que va a ponerse en el property que 
+                //obtiene el nombre en la página de éxito:
+                nombre = " colega " + nombre;
             }
         });
         
